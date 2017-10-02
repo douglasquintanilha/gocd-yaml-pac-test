@@ -1,6 +1,6 @@
 pipelines:
   pipeline-from-master: # definition of mypipe1 pipeline
-    group: defaultGroup
+    group: TestGroup
     materials:
       mygit: # this is the name of material, the name can contain only of alphanumeric & underscore characters
         # keyword git says about type of material and url at once
