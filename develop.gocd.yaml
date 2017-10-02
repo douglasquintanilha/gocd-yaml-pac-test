@@ -21,13 +21,7 @@ pipelines:
                    destination: test-reports/
               tabs:
                 report: test-reports/index.html
-              tasks: # ordered list of tasks to execute in job csharp
-               - fetch:
-                   pipeline: pipe2
-                   stage: build
-                   job: test
-                   source: test-bin/
-                   destination: bin/
+              tasks: # ordered list of tasks to execute in job csharp            
                - exec: # indicates type of task
                    command: make
                    arguments:
